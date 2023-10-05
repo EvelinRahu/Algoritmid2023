@@ -1,0 +1,22 @@
+Dokumentatsioon 1.2
+
+LIFO andmestruktuur
+
+Kood on loodud Pythoni keeles ja kasutab listi lifo_stack kui LIFO andmestruktuuri. Elementide lisamiseks on loodud for loop, mis lisab 1-10ni arvud LIFO andmestruktuuri järjest. Meetod append() lisab iga järgneva elemendi listi lõppu ja meetod pop() eemaldab ja väljastab listi viimase elemendi, kui pole lisatud eemaldatava elemendi indeksit.
+
+Sisestamise ja kustutamise ajalise keerukuse mõõtmiseks kasutasin moodulit time ja väljastan mõlema protsessi jaoks kulunud aja (lõppaeg - algusaeg). 
+
+Katse 1: 1) Lisamisele kulunud aeg on 0.0
+	 2) Eemaldamisele kulunud aeg on 0.0
+
+Katse 2: 1) 0.0
+	 2) 0.0
+
+Katse 3: 1) 0.0004737377166748047
+	 2) 0.0010118484497070312
+
+Katse 4: 1) 0.0010423660278320312
+	 2) 0.0
+
+Nagu näha, on need kõikuvad ajad, kui siiski väikesed. Võib öelda, et antud koodi ajaline keerukus sõltub elementide arvust ja on seega konstantne O(1) nii lisamisel kui eemaldamisel. Kui tõsta elementide arvu, muutuks ka ajaline keerukus.
+	

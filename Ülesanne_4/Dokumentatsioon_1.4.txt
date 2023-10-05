@@ -1,0 +1,5 @@
+Dokumentatsioon 1.4
+
+Binaarne otsingualgoritm
+
+Loodud binaarne otsingualgoritm jagab sorteeritud listi pooleks tingimusel, et esimene indeks ei ole liikunud viimasest indeksist üle. Kuni see tingimus on täidetud, leitakse keskmine indeks jagades vahemik pooleks.  Kogu protsess toimib kontrollides keskmist elemeti ja liikudes vastavalt sellele kas paremale või vasakule, kuni arv on leitud või vahemik on tühjaks jäänud. Kui otsitav arv on leitud, tagastatakse selle indeks, kui ei ole, tagastatakse vastav teade. 

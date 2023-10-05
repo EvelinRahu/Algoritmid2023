@@ -1,0 +1,13 @@
+Ülesanne 1.5
+
+Kirjuta lühike võrdlus puude ja graafide vahel. Rõhuta puude omadusi (nagu nende
+atsükliline olemus) ja kuidas need eristuvad üldistest graafidest. Too näiteid olukordadest,
+kus struktuur on graafina, kuid mitte tingimata puuna.
+
+Puud on graaf, kuid võrreldes graafiga, puuduvad selles tsüklid, see on suunaga ja igal sõlmel on üks serv (va juure sõlmel). Samas graafis võib esineda tsükleid ja need võivad olla nii suunatud kui ka suunamata. 
+
+Näited olukordadest: 
+
+1) Sotsiaalmeedias on platvormide kasutajad sõlmedeks ja nende jälgijad/sõbrad servadeks. Kasutajad saavad jälgida kumbki üksteist ehk olla suunamata või suunatud ehk üks jälgib, teine ei jälgi. Sõrpussuhted on tavaliselt mõlemapoolsed. Kuid kuna võivad olla ühised sõbrad, siis saab tekkida tsükkel. 
+
+2) Teede võrgustik, kus ristmikud on sõlmed ja teed servad ehk juba ei saaks see olla puu, kui sõlmel on rohkem kui üks serv ning teedest saavad tekkida tsüklid. 
