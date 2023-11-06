@@ -1,0 +1,10 @@
+Ülesanne 4: ajakompleksuste analüüs
+
+a) Millistel eelmainitud sortimisalgoritmidel on halvimal juhul ajakompleksus O(n^2)?
+Kõigil kolmel eelmainitud sortimisalgoritmidel, Bubble Sort, Insertion Sort ja Selection Sort, on halvimal juhul ajakompleksus O(n^2).
+
+
+b) Milline sortimisalgoritm oleks kõige sobivam sortimaks loendit täisarvudega, mis 
+jäävad vahemikku 1 kuni 100 ja miks?
+
+Kuna on ette antud kindel vahemik, mis on sisendite arvu järjekorras ja tegemist oleks täisarvudega, siis kasutaks counting sorti, sest on kiirem kui võrdlusel põhinevad sortimisalgoritmid ja stabiilne, sest säilitab võrdsete elementide järjekorra.

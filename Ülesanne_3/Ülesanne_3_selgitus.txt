@@ -1,0 +1,8 @@
+Ülesanne 3
+
+Antud on osaliselt sorteeritud loend: [12, 11, 13, 5, 6, 7]. Rakenda Insertion Sort
+algoritmi. Selgita, miks Insertion Sort võib olla tõhusam sellele loendile võrreldes
+täielikult sortimata loendiga.
+
+Vastus:
+Insertion Sort võib olla tõhusam sellele loendile võrreldes täielikult sortimata loendiga, kuna algoritm ei pea läbima tervet loendit nii palju kordi, sest arvestab loendi osalist sorteeritust, mistõttu on see kiirem. 
