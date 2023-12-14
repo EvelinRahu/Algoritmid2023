@@ -1,0 +1,18 @@
+Ülesanne 1: Lineaarotsing (Linear Search)
+
+1. Analüüsige oma algoritmi aja- ja ruumikomplekssust.
+
+Lineaarotsingu algoritmi ajaline keerukus sõltub otsitava elemendi asukohast listis. 
+Kui mu otsitav element asub listis esimesel indeksil, mida ta ka asub, siis oleks ajaline keerukus O(1) ehk "Best Case". Kuid kui otsitav element asuks listi keskel ("Average Case"), lõpus või puuduks (mõlemal juhul "Worst Case"), siis oleks ajaline keerukus O(n), kus n oleks võrdne listi elementide koguarvuga. 
+
+Ruumikompleksus e. ruumiline keerukus on minu algoritmil (ja ka üldiselt lineaarsel otsingul) O(1), mis tähendab konstantset ruumikasutust, kuna see ei kasva koos sisendi suurusega ega sõltu sellest.  
+
+2. Arutlege lühidalt, kuidas Linear Search algoritmi saab kasutada reaalmaailma
+rakendustes ja millised on selle piirangud.
+
+Lineaarotsingu algoritmi saab kasutada reaalmaailma rakendustes, kus on vaja leida sorteerimata listist mingi kindel element. Näiteks kontaktide otsimine telefoniraamatust, algoritm liigub läbi kõik kontaktid kuni leiab selle, mida otsitakse, või nime otsimine nimekirjast. Ehk kokkuvõtlikult on seda otsingut hea kasutada väiksemate andmebaaside või loendite korral, et leida kindel element. 
+
+Piirangud:
+1) Suure andmemahuga töötamine, mis muudab otsimise aeglasemaks ja selle asemel on mõistlikum kasutada binaarset otsingualgoritmi;
+2) Korduvad otsingud, kuna see ei saa kasutada eelnevat sortimist;
+3) Sorteeritud loendid, kuna see ei vaja sorteeritud listi ega ei eelda seda, siis on mõistlikum kasutada muid algoritme mis kasutavad ära sorteeritud andmete struktuuri. 

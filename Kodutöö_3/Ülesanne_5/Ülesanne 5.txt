@@ -1,0 +1,11 @@
+Ülesanne 5: Otsingualgoritmide praktiline rakendamine
+
+Valitud stsenaarium: sõna otsimine sõnaraamatust.
+
+Minu arvamusel oleks kõige tõhusam Binary Search algoritm, kui arvestada, et 1) sõnaraamatusse sõnu lisatakse pigem harva ehk struktuur on stabiilne; 2) sõnad on tähestikulises järjekorras; 3) andmebaas on suuremahuline; 4) sõnad ei ole korduvad. Neid andmete omadusi arvestades oleks Binary Search kiire ja täpne otsingualgoritm valitud stsenaariumiks. 
+
+Potentsiaalsed modifikatsioonid:
+
+1) Uuendamise optimeerimine - kui lisatakse mingi uus sõna, siis täieneks koheselt sõnaraamatu massiiv ja lisaks õigesse kohta uue sõna tähestikulises järjekorras.
+
+2) Käsu algoritmid - otsingumustrite jälgimine ja sõnaraamatu struktuuri kohandamine, et teha rohkem otsitud sõnade leidmise kiiremaks.

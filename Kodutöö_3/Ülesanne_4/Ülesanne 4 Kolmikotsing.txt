@@ -1,0 +1,42 @@
+Ülesanne 4: Kolmikotsing ja Kahendotsing (Ternary Search vs Binary Search)
+
+1. Kirjutage lühike ülevaade Ternary Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide.
+
+Ternary Search (kolmikotsing) on "divide-and-conquer" algoritm nagu Binary Search (kahendotsing) ja töötab samal põhimõttel, kuid jagab loendi kolmeks osaks kahe asemel. Selle eelduseks on sorteeritud andmebaas, millest otsitava elemendi leidmiseks kasutatakse kahte keskpunkti ning vasak-ja parempoolseimat elementi. Need muutujad jagavad loendi kolmeks võrdseks osaks ja aitavad vähendada otsitavat ala. Esmalt võrreldakse otsitavat elementi keskpunktidega, mis leitakse kindlate valemite alusel: 
+
+1) keskmine1 = vasak + (parem - vasak) // 3;
+2) keskmine2 = parem - (parem - vasak) //3.
+
+Kui otsitav element ei asu keskpunktides ja on esimesest keskpunktist väiksem, siis väheneb otsitav ala kahe osa võrra ning otsimine algab otsastpihta vasakpoolsest kolmandikust.
+
+Kui otsitav element on teisest keskpunktist suurem, siis väheneb otsitav ala kuni parempoolse kolmandikuni.
+
+Kuid kui otsitav element jääb keskpunktide ala vahele, siis saab see otsingualaks. 
+
+Ternary Search pseudo-kood:
+
+FUNKTSIOON ternary_search(list, vasak_element, parem_element, otsitav_element):
+    vasak_element = 0
+    parem_element = LENGTH(list) - 1
+
+    WHILE parem_element >= vasak_element:
+        keskmine_element_1 = vasak_element + (parem_element - vasak_element) // 3
+        keskmine_element_2 = parem_element - (parem_element - vasak_element) // 3
+
+        IF list[keskmine_element_1] == otsitav_element:
+            RETURN keskmine_element_1
+
+        IF list[keskmine_element_2] == otsitav_element:
+            RETURN keskmine_element_2
+
+        IF otsitav_element < list[keskmine_element_1]:
+            parem_element = keskmine_element_1 - 1
+        ELIF otsitav_element > list[keskmine_element_2]:
+            vasak_element = keskmine_element_2 + 1
+        ELSE:
+            vasak_element = keskmine_element_1 + 1
+	    parem_element = keskmine_element_2 - 1
+
+    RETURN -1
+
+

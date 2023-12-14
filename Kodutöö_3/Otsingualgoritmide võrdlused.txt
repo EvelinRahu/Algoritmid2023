@@ -1,0 +1,48 @@
+Otsingualgoritmide võrdlused
+
+
+ÜLESANNE 2
+
+2. Võrrelge teoreetilises analüüsis valminud Binary Search'i ja Linear Search'i
+aegkomplekssust.
+
+Kahendotsingu ajaline keerukus on O(log n), kus n tähistab SORTEERITUD listis olevate elementide koguarvu. Kahendotsingu ajaline keerukus on parem kui lineaarse otsingu algoritmil, sest see jagab listis olevad elemendid pooleks iga iteratsiooni korral, mistõttu väheneb ka aeg otsitava elemendi leidmiseks ega pea tervet listi selleks läbima. Kahendotsingu algoritm peab ainult võrdlema keskmist elementi otsitava elemendiga, mitte igat elementi nagu lineaarne. 
+
+
+3. Tooge näide stsenaariumist, kus Binary Search on kasulikum kui Linear Search, ja selgitage miks.
+
+Näiteks 200 leheküljeline sõnaraamat, milles on sõnad sorteeritud tähestikulises järjekorras. Kui just otsitav sõna pole kohe esimene sõna selles raamatus, siis on Binary Search selle leidmiseks parem. Linear Searchi kasutades peaks hakkama ükshaaval kõiki sõnu läbima ja võrdlema otsitava sõnaga, mis võtaks liiga kaua aega. Kui aga kasutada Binary Searchi, siis see esmalt jagab selle raamatu pooleks ning seejärel võrdleb tähestiku järgi, kas otsitav sõna peaks asuma paremal või vasakul. Seejärel saab ta välistada ühe poole ning teha uuesti lehtede poolitamist. 
+
+
+
+ÜLESANNE 3
+
+2. Võrrelge Jump Search'i ajalist komplekssust Linear Searchi ja Binary Searchiga.
+
+Jump Search'i ajaline keerukus on O(sqrt(n)), mis tuleneb hüppamisest ja lineaarotsingust. Linear Search'i ajaline keerukus on aga lineaarne ja Binary Search'il on logaritmiline. Ehk kõigil kolmel on erinev ajaline keerukus. Ajaline keerukus ja algoritmi valik sõltub ka andmebaasi suurusest ja sorteeritusest. 
+
+Võrdlemiseks ütleme, et tegemist on osaliselt sorteeritud keskmise andmebaasi suurusega ning sisaldab korduvaid elemente. Sel juhul on kõige efektiivsem Jump Search, sest ei eelda sorteerimist ja vähendab otsinguruumi hüpetega, mistõttu tuleb toime ka suuremate andmebaasidega. 
+
+
+3. Arutlege lühidalt stsenaariumide üle, kus Jump Search võib olla efektiivsem võrreldes Linear Searchi ja Binary Searchiga.
+
+Kui tegemist on suurema andmemahuga, siis Linear Search algoritmiga võrreldes on efektiivsemad nii Binary kui ka Jump Search, kuna need algoritmid jaotavad massiivi osadeks ja ei pea läbima tervet massiivi otsitava elemendi leidmiseks. Küll aga kui andmemaht on osaliselt sorteeritud ja otsitakse lihtsust, siis on Jump Search efektiivsem Binary Search algoritmist. 
+
+
+
+ÜLESANNE 4
+
+2. Võrrelge Ternary Search'i ja Binary Search'i aegkomplekssust. (Kas mõõdetud
+tulemus, teoreetiline võrdlus, vms)
+
+Antud otsingualgoritmide aegkompleksus sõltub sellest, mitmeks osaks loend jaotatakse. Binary Search on 
+O(log(2)n) keerukusega, kuid kuna Ternary Search algoritm jagab loendi kolmeks on temal ajaline keerukus 
+O(log3 n).
+
+
+3. Arutlege lühidalt, kas Binary Search on üldiselt tõhusam kui Ternary Search
+ning millistes olukordades.
+
+Üldiselt on Binary Search tõhusam ja populaarsem valik väiksemate ja mõõdukamate andmemahtude korral, kuna on veidi lihtsam ja kiirem kui Ternary Search, kuna peab arvutama ainult ühe keskpunkti, mitte kaks. 
+
+

@@ -1,0 +1,37 @@
+Ülesanne 3: Jump Search
+
+1. Kirjutage lühike ülevaade Jump Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide.
+
+Jump Search algoritm on tuntud ka kui hüpikotsing, mis töötab läbi sorteeritud massiivi tehes hüppeid plokkide kaupa kuni leiab otsitava või suurema elemendi. Kui suurem element on leitud, teostab kood lineaarotsingu eelmises plokis. Hüppesuurused on fikseeritud ja määratud massiivi suuruse järgi, millest võetakse ruutjuur ehk kui massiivis on 16 elementi, siis ploki suurus hüpeteks oleks 4 elementi. Kui elementi ei leita, lõpetatakse otsing. 
+
+Jump Search pesudo-kood:
+
+FUNKTSIOON jump_search(massiiv, otsitav_element):
+    massiivi_suurus = LENGTH(arr)
+    hüppe_punkt = 0
+    eelnev_hüppepunkt = 0
+    
+
+    # Tsükkel, mis tegeleb läbi massiivi hüppamise fikseeritud ploki suuruse võrra, et vähendada vahemikku  
+    # otsitava elemendi leidmiseks.
+    WHILE massiiv[MIN(hüppe_punkt, massiivi_suurus) - 1] < otsitav_element:
+        eelnev_hüppepunkt = hüppe_punkt
+        hüppe_punkt += SQUARE_ROOT(n)
+
+        IF eelnev_hüppepunkt >= massiivi_suurus:
+            RETURN -1  # Elementi ei leitud.
+
+    # Tsükkel, mis tegelev lineaarse otsingu eelnevas plokis, kui on leitud otsitavast elemendist suurem element 
+    # eelnevas tsüklis.
+    WHILE massiiv[eelnev_hüppepunkt] < otsitav_element:
+        eelnev_hüppepunkt += 1
+
+        IF eelnev_hüppepunkt == MIN(hüppe_punkt, massiivi_suurus):
+            RETURN -1  # Elementi ei leitud.
+
+    IF massiiv[eelnev_hüppepunkt] == otsitav_element:
+        RETURN eelnev_hüppepunkt  # Otsitav element leitud muutuja eelnev_hüppepunkt indeksil.
+
+    RETURN -1  # Elementi ei leitud.
+
+
