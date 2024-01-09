@@ -1,0 +1,26 @@
+Ülesanne 3: Separate Chaining Kokkupõrgete Lahendamiseks
+
+2. Võrdle separate chaningu efektiivsust open addressing meetodiga ajalise ja ruumilise komplekssuse mõttes.
+
+Ajaline komplekssus:
+
+Separate chaining on ajaliselt efektiivsem, kuna iga ahel toimib omaette linked-listina ja otsimise ning lisamise keskmine aeg on O(1), mis võib küll suureneda kokkupõrgetel sõltuvalt ahela pikkusest. Open addressing on ajaliselt kehvem, kuna kokkupõrgete korral on vajalik leida tühi koht räsitabelis lisameetmetega, nagu näiteks lineaarne proovimine või ruutproovimine, suureneb otsimise aega ja keerukus ning võib tekkida ka rohkem konflikte. 
+
+Ruumiline komplekssus:
+
+Open addressing on mälu poolest efektiivsem, kuna ei pea kasutama täiendavaid andmestruktuure nagu linked-list. Separate chaining kasutab mälu rohkem just linked-listi loomise või olemasoleva laiendamise tõttu.
+
+3. Aruta separate chaning kasutamise plusse ja miinuseid räsitabelites.
+
+Plussid:
+
+1) Lihtne rakendamine;
+2) Dünaamiline suurus (elementide arv piiramatu, ei sõltu räsitabeli suurusest);
+3) Lihtne ja efektiivne elementide lisamine, eemaldamine ja otsimine;
+4) Tõhus kokkupõrgete lahendamine;
+
+Miinused:
+
+1) Mälu nõudlus suurem (linked-list kasutab lisamälu);
+2) Ahelad aeglustavad toiminguid, jõudlus halveneb;
+3) Sõltuvus räsifunktsioonist;

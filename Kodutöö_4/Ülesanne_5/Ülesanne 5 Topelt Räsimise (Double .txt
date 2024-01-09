@@ -1,0 +1,24 @@
+Ülesanne 5: Topelt Räsimise (Double hashing) Rakendamine
+
+1. Rakenda topelt räsimise algoritm ja aruta, kuidas see aitab ületada ühekordse
+räsimise piiranguid.
+
+Topelt räsimine aitab ületada ühekordse räsimise piiranguid kokkupõrgete vähendamisega ja hajutavuse suurendamisega.
+Ühekordse räsimisega määratakse iga võtme väärtus kindlale indeksile otse läbi räsifunktsiooni, kuid topelt räsimisel kasutatakse kahte räsifunktsiooni, mis vähendab võimalust, et samale indeksile satuvad samad väärtused.
+
+
+2. Analüüsi oma rakenduse aja- ja ruumikomplekssust.
+
+Ajakompleksus: keskmisel juhul O(1), kui esimene räsifunktsioon annab vaba koha otse. Kontrollisin seda insert funktsiooni siseselt, printides välja self.tabel[v6tme_indeks]. Tuli välja, et mõnikord kasutas rakendus ainult esimest räsifunktsioon, kuid vahepeal ka teist räsifunktsiooni. Sellisel juhul oleks ajakomplekssus 
+O(1 + α), kus α on kokkupõrgete arv. Otsimisel on ajakomplekssus O(1), sest võti leitakse esimeste katsete jooksul, kuna tabeli suurus on väike ja elemente on ka vähe. 
+
+Ruumikomplekssus
+
+1) Lisamisel: O(N), kus N on tabeli suurus, sest andmed salvestatakse otse tabelisse. 
+
+2) Otsimisel: O(1), kuna otsimiseks ei kasutata lisamälu.
+
+
+3. Paku välja stsenaarium, kus topelt räsimine oleks eriti efektiivne.
+
+Toidupoe rakendus, kus on palju sarnaste atribuutidega tooteid. Topelt räsimisega saaks vähendada kokkupõrkeid  toodetel, millel brändid, tootegrupid või hinnad on sarnased, ja kiirendada otsingut ning toodete lisamist räsitabelisse.

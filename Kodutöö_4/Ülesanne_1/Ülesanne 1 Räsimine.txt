@@ -1,0 +1,23 @@
+Ülesanne 1: Räsimine
+
+1. Kirjuta selgitus räsimise (hashing) kontseptsioonist - põhiidee ja eesmärk.
+
+Räsimise käigus muudetakse andmed fikseeritud unikaalseks järjestikuks ehk räsiks. Kasutatakse andmete turvalisuse tagamiseks, näiteks paroolide puhul, ja kiireks ligipääsuks. 
+
+2. Kirjelda hea räsifunktsiooni omadusi ja selgita, miks need on olulised.
+
+1) Unikaalsus: räsiväärtused ei kordu ehk igale erinevale sisendile vastab erinev räsi, et vältida räsikonfliktide teket ja tagada turvalisus.
+2) Pöördumatu: algse sisendi taastamine räsi põhjal peaks olema võimatu, et tagada turvalisus tundlike andmete salvestamisel.
+3) Räsikonfliktide vältimine: räsi väärtusi jaotatakse ühtlaselt räsitabelis, et ära hoida räsi kordumist erinevatel sisenditel ja tagada unikaalsus.
+4) Sama sisendi korral tagastatakse sama räsi, et kiirendada ja lihtsustada andmete võrdlemist või tuvastamist.
+
+3. Selgita kokkupõrgete lahendamise tehnikaid, eriti eraldi aheldamist (separate chaining) ja 
+avatud aadressimist (open addressing). 
+
+Kokkupõrgete lahendamise tehnikad:
+1) Avatud adresseerimine (open addressing) - uued elemendid sisestatakse otse räsitabelisse vabasse kohta;
+2) Lineaarne proovimine (linear probing) - uute elementide sisestamine räsitabelisse toimub järjestikku järgmisse vabasse kohta;
+3) Kvadratiline proovimine (quadratic probing) - kokkupõrke korral kasutatakse kvadraatfunktsiooni uue kohta leidmiseks räsitabelis;
+4) Kahekordne räsimine (double hashing) - kasutab kahte räsifunktsiooni, esimene määrab esialgse koha räsitabelis, teine tuleb kasutusse kokkupõrke korral ning leitakse uus vaba koht;
+5) Eraldi aheldamine (separate chaining) - igas räsitabeli pesa sisaldab loendit/ahelat, kus salvestatakse kõik elemendid, mille räsifunktsiooni väärtus on sama. Kokkupõrke korral lisatakse uued väärtused vastavasse loendisse.
+

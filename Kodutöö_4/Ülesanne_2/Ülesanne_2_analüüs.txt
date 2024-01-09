@@ -1,0 +1,12 @@
+Ülesanne 2: Indeksi Kaardistamise (Index Mapping) Rakendamine ja Analüüs
+
+2. Analüüsi oma rakenduse aja- ja ruumikomplekssust.
+
+Ajakompleksus on nii sisestamisel kui ka väärtuse saamisel konstante ehk O(1), ei sõltu massiivi suurusest ja on kiire, kuna mõlemad tegevused toimuvad otse massiivi indeksi kaudu. 
+
+Ruumikompleksus jällegist sõltub massiivi suurusest ning on seetõttu O(n), kus n on maksimaalse võimaliku võtme väärtus. Indekseerimisel on igal võtmel otsene seos mälus oleva vastava väärtusega, mis võimaldab kiiret juurdepääsu väärtuse kättesaamiseks läbi indeksi.  
+
+3. Aruta, kuidas indeksi kaardistamist massiividega saab rakendada reaalses maailmas.
+
+See on hea viis hoida unikaalse ID-ga inimeste või asjade jaoks andmebaasi. Näiteks algkoolides, gümnaasiumites, kasutatakse õpilaspileteid, millel on unikaalne ID ja jätab jälje iga õpilase kohta, kes, millal söömas käis ning selle alusel toimub maksmine. 
+
