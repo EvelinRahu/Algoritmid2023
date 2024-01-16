@@ -1,0 +1,38 @@
+Ülesanne 2: Kuhja (Heap) Struktuuri Teoreetiline Analüüs
+
+1. Kirjelda min-kuhja ja max-kuhja struktuuride teoreetilisi omadusi.
+
+Max-Heap:
+1) Juursõlm on kõige suurem element;
+2) Iga sõlme vanem on oma lapsest suurem või võrdne;
+3) Suurima väärtusega element on prioriteetsem teistest sõlmedest;
+4) Kõige suurem element eemaldatakse esimesena ehk juursõlm;
+
+Min-Heap:
+1) Juursõlm on kõige väiksem element;
+2) Iga sõlme vanem on oma lapsest väiksem või võrdne;
+3) Väiksema väärtusega element on prioriteetsem teistest sõlmedest;
+4) Kõige väiksem element eemaldatakse esimesena ehk juursõlm.
+
+
+2. Analüüsi nende struktuuride aja- ja ruumikomplekssust.
+
+Ajakompleksuss:
+
+Elementide lisamine toimub esimesele vabale kohale (ülevalt alla ja vasakult paremale), seejärel toimub "heapifying up" ehk lisatud elementi hakatakse võrdlema tema vanemaga, kuni leitakse õige koht ja saadakse korrektne struktuur. 
+Eemaldamisel võetakse ära juursõlm ja liigutatakse selle asemele viimasena lisatud element, mille järel hakatakse emasõlme võrdlema vasaku-ja parema lapsega kuni on taastatud heap'i struktuur. 
+
+Nende toimingute ajakomplekssus on O(log n).
+
+Massiivist kuhja "ehitamine" saab olla lineaarne ehk O(n).
+
+Ruumikompleksuss:
+
+Kuhja saab esitleda nii masiivina kui ka seotud struktuurina ning mõlematel on ruumi kasutus võrdeline kuhja elementide arvuga, mistõttu on selle ruumikomplekssus lineaarne ehk O(n).
+
+
+3.Aruta, kuidas kuhja struktuurid sobivad andmete sorteerimiseks ja prioriteetjärjekordade haldamiseks.
+
+Kuhja struktuurid sobivad prioriteetjärjekordade haldamiseks, kuna pakuvad lihtsat ja tõhusat viisi toimingute jaoks logaritmilise ajalise keerukusega. See võimaldab eemaldada prioriteesemaid elemente esimesena ning kasutatakse algoritmides nagu Dijkstra lühima tee leidmiseks. 
+
+Andmete sorteermisel kasutatakse heapsorti võrdluspõhist sortimisalgoritmi, mida rakendatakse kuhja andmestruktuuri abil. Selle ajaline keerukus on O(n log(n)), mis muudab selle tõhusaks suurte andmekogumite jaoks ning see on ka tõhus kohapealne sortimisalgoritm ühtlase ajalise keerukusega.  

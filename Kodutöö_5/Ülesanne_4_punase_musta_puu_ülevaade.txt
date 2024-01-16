@@ -1,0 +1,29 @@
+Ülesanne 4: Punase-Musta Puu (Red-Black Tree) Teoreetiline Ülevaade
+
+1. Kirjelda punase-musta puu andmestruktuuri ja selle peamisi omadusi.
+
+Punane-must puu on tasakaalustatud binaarne otsingupuu andmestruktuur, milles iga sõlm on kas musta või punast värvi. Tasakaalustatuse tagab alampuude võrdne sügavus ja värviskeem, mis on ka struktuuri aluseks. 
+
+Peamised omadused:
+
+1) Iga sõlm on kas punane või must;
+2) Juursõlm on alati must;
+3) Kõik lehed (lasteta sõlm) on mustad;
+4) Punase sõlme lapsed on alati mustad;
+5) Igast sõlmest tema eelkäijateni (näiteks lehtedest juursõlmeni) on võrdne arv musti sõlmi.
+
+
+2. Võrdle teoreetiliselt punase-musta puu ja binaarse otsingupuu tõhusust.
+
+Punane-must puu hoiab end värviskeemi ja omaduste põhjal tasakaalus, mis teeb selle tõhusamaks ja efektiivsemaks kui binaarne otsingupuu.
+
+Binaarne otsingupuu võib muutuda tasakaalutuks, kui andmeid lisatakse/eemaldatakse halva strateegiaga, halvimal juhul võib see muutuda lineaarseks ehk O(n). Otsimisoperatsioon on keskmisel juhul O(log n), kuid tasakaalustamatul kujul on halvimal juhul O(n)
+
+Punane-must puu säilitab tasakaalu pärast igat operatsiooni, kuna tagab võrdse sügavuse kõikidel alampuudel ning hoiab keerukuse stabiilsena, mis on keskmiselt O(log n).
+
+
+3. Aruta, kuidas punase-musta puu tasakaalustamine ja värvireeglid aitavad kaasa andmestruktuuri tõhususele.
+
+Punase-musta puu tasakaalustamine aitab kaasa andmestruktuuri tõhususele tagades otsinguoperatsioonide ajal kiirema toimimse. Otsingu keerukus on seotud puu kõrgusega ja kuna tasakaalustatud puu puhul on kõrgus logaritmiline, siis on tagatud ka kiirem otsingu aeg. 
+
+Värvireeglid tagavad konfliktide ärahoidmise, näiteks kahte punast sõlme järjestikku, mille tulemuseks oleks pikad ahelad, mis rikuksid puu tasakaalu, muutes selle alampuud ebavõrdseks. Need lisavad tõhusust ka lisamis-ja eemaldamisoperatsioonidele, muutes need toimingud ennustatavaks ja tagades puu tasakaalu ka pärast neid operatsioone. 

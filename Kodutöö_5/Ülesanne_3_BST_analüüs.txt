@@ -1,0 +1,33 @@
+Ülesanne 3: Binaarse Otsingupuu (Binary Search Tree, BST) Teoreetiline Analüüs
+
+1. Kirjelda binaarse otsingupuu (BST) andmestruktuuri ja selle põhielemente.
+
+BST andmestruktuur põhineb binaarsetel puudel, kus iga sõlm sisaldab võtmeväärtust ning kahte alamjärge - vasakpoolset ja parempoolset alampuud. See järgib spetsiifilist järjestust: iga vasakpoolse alampuu sõlme võti on väiksem kui selle sõlme oma EHK vasak laps on väiksem kui emasõlm ja iga parempoolse alampuu sõlme võti on suurem kui selle sõlme oma EHK parem laps on suurem kui emasõlm. 
+
+Põhielemendid: 
+1) Sõlm (Node) - iga sõlm BST's sisaldab võtmeväärtust;
+2) Võtmed (Keys) - iga sõlme võti on unikaalne ja defineerib selle koha BST-s vastavalt järjestusele;
+3) Vasak-ja parempoolne alampuu (Left and Right Subtrees) - vasaku alampuu kõik sõlmed on selle sõlme võtmest väiksemad, parema alampuu kõik sõlmed on selle sõlme võtmest suuremad;
+4) Juursõlm (Root Node) - sellest algavad otsingud;
+5) Lehed (Leaf Node) - sõlm, millel pole alampuid;
+
+
+Toimingud
+
+1) Sisestamine: uut võtit võrreldakse juursõlmega, kui võti on väiksem, siis liigub see vasakule alampuusse; 
+kui võti on suurem, siis liigub see paremale alampuusse.
+
+2) Otsing: saab alguse juursõlmest ja jätkub vastavalt võrdluse tulemustele vasaku või parema alampuu suunas;
+
+3) Kustutamine: 1) Lastetu sõlm ehk leaf node, kustutatakse otse; 2) Sõlm ühe lapsega, asendatakse sõlm tema lapsega; 3) Sõlm kahe lapsega, asendatakse kustutatav sõlm tema järgmise in-order järglasega.
+
+
+2. Arutle, kuidas tasakaalustamata puud mõjutavad BST tõhusust ja kuidas seda saab teoreetiliselt optimeerida.
+
+Tasakaalustamata puud mõjutavad BST tõhusust muutes otsinguaja halvimaks ehk lineaarseks, sõltuvalt puu kõrgusest. Puu kõrgust võivad suurendada sisestamine ja kustutamine, mis muudab need toimingud aeglaseks. 
+
+Teoreetilised optimeerimisviisid:
+
+1) Pööramine: vasak-või parempoolne pööre võivad aidata hoida puud tasakaalus pärast sisestamist/kustutamist;
+2) Juhuslikus järjestuses sisestamised;
+3) Kasutada alternatiivina AVL-puud või punane-must puud.

@@ -1,0 +1,38 @@
+Ülesanne 5: AVL Puu vs. Punase-Musta Puu Teoreetiline Võrdlus
+
+1. Kirjelda AVL puu andmestruktuuri ja selle peamisi omadusi.
+
+AVL puu on isebalanseeriv binaarne otsingupuu, mis hoiab tasakaalustatud andmestruktuuri sisestamise ja kustutamise toimingute ajal. AVL puu andmestruktuur jälgib etteantud reeglit: vasaku ja parema alampuu kõrguste erinevus, mida nimetatakse tasakaaluteguriks, on maksimaalselt 1. Tasakaaluteguri jälgimine tagab, et kõrgus on logaritmiline ja puu tasakaalus.
+
+Peamised omadused
+1) Binaarpuu põhiomadus: vasaku/parema alampuu sõlmede väärtused on väiksemad/suuremad kui emasõlmel; 
+2) Tasakaalutegur;
+3) AVL puu kõrgus: logaritmiline sõlmede arvust;
+4) Operatsioonid võtavad aega O(log n);
+5) Pööramisoperatsioonid, mis aitavad säilitada puu tasakaalu:
+	1. Vasak-vasak pööre (LL) - kui paremale alampuule lisatakse sõlm ja puu läheb tasakaalust välja, tehakse 	üks vasakpööre.
+	2. Parem-parem pööre (RR) - kui vasakule alampuule lisatakse sõlm, siis tehakse üks parempööre.
+	3. Vasak-parem pööre (LR) - kui sõlm sisestatakse vasaku alampuu paremasse alampuusse, see on 	kombinatsioon vasakule pööramisest, millele järgneb parempööre.
+	4. Parem-vasak pööre (RL) - kui sõlm sisestatakse parema alampuu vasakusse alampuusse, see on 	kombinatsioon paremale pööramisest, millele järgneb vasakpööre.
+
+
+2. Võrdle teoreetiliselt AVL puu ja punase-musta puu tõhusust.
+
+Operatsioonide jõudlus
+
+1) AVL puu: tõhus otsinguoperatsioonides, kuna tasakaalustamine on rangem. Kuid elementide lisamine/kustutamine võivad olla keerukamad, kuna isebalanseerumiseks on vaja teha rohkem operatsioone, nagu pööramisoperatsioonid.
+
+2) Punane-must puu: kiirem lisamine/kustutamine, kuna ei nõua palju tasakaalustamise operatsioone. Samas otsinguoperatsioonid on aeglasemad.
+
+Mälu tarbimine
+
+1) AVL puu: suurem mälukasutus, kuna iga sõlm hoiab kõrguse infot.
+2) Punane-must puu: väiksem mälukasutus, ei ole vajalik kõrguse info hoidmine.
+
+
+3. Analüüsi, millistes rakendustes oleks üks struktuur teisele eelistatav ja põhjenda oma valikuid.
+
+AVL puu struktuur oleks eelistatav rakendustes, kus on eesmärgiks andmete otsimine/täpse vaste saamine, kuna otsinguoperatsiooni ajaline keerukus on parem kui punasel-mustal puul. Ja vastupidiselt oleks tõhusam punane-must puu rakendustes, kus on andmete lisamine/kustutamine sagedasemad operatsioonid ning kui soovitakse struktuuri, millel on väiksem mälunõudlus.
+
+Näiteks oleks punane-must puu hea andmebaasidesse lisamisel/kustutamisel, kuid AVL puu andmebaasist otsimisel.
+
