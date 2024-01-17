@@ -1,0 +1,12 @@
+Ülesanne 5: Graafide Värvimise Probleem
+
+1. Kirjelda graafide värvimise probleemi olemust ja selle tähtsust arvutiteaduses.
+
+Graafide värvimise probleem: kuidas määrata graafi iga tipu/serva jaoks värvi nii, et kaks omavahel ühendatud tippu/serva ei oleks sama värvi. Eesmärk on kromaatiline arv oleks võimalikult väike ehk võimalikult vähe arv värve.
+
+Graafide värvimise probleem on NP-raskusastmega ja selle täpne lahendamine suure graafi korral on keeruline. Selle lahendamine on oluline, kuna võimaldaks efektiivselt modelleerida ja analüüsida erinevaid süsteeme ning struktuure arvutiteaduses, et vältida konflikte ja tagada tõhus ressursside kasutamine.
+
+
+2. Arutle, kuidas graafide värvimist saab kasutada ressursside jaotamise ja konfliktide lahendamise probleemides.
+
+Graafide värvimist võib kasutada üldise optimeerimisprobleemina, kus iga tipp esindab konkreetset ressurssi või ülesannet ning servad näitavad konflikte. Värvide määramine vastab ressursside jaotamisele, kus püütakse minimeerida konflikte või tagada, et konfliktsed ressursid oleksid kasutuses erinevatel aegadel.

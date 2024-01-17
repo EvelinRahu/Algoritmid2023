@@ -1,0 +1,14 @@
+Ülesanne 4: Bellman-Fordi Algoritmi Teoreetiline Analüüs
+
+1. Kirjelda Bellman-Fordi algoritmi ja selle erinevust Dijkstra algoritmist.
+
+Bellman-Fordi ja Dijkstra on mõlemad graafi otsingu algoritmid, mis tegelevad graafides alguspunktist lühima tee leidmiseks teiste tippudeni.
+
+Bellman-Fordi algoritm on mõeldud kaalutud graafidele, kus servade kaalud võivad olla negatiivsed, mis ongi erinevus Dijkstraga, mis on mõeldud ainult mitte-negatiivsete kaaludega graafides. 
+
+
+2. Arutle, kuidas Bellman-Fordi algoritm suudab tuvastada negatiivseid tsükleid graafides ja milline on selle praktiline tähtsus.
+
+Bellman-Fordi algoritm suudab tuvastada negatiivseid tsükleid graafides, kuna selle tööpõhimõte hõlmab lõpmatusest kauguste vähendamist mööda servasid. Algoritm kontrollib korduvalt igat serva, vähendades kaugusi mööda seda serva liikudes. Kui mingil hetkel kaugus mõne tippude ahela mööda muutub negatiivseks, siis see näitab, et graaf sisaldab negatiivse kaaluga tsüklit.
+
+Negatiivsete kaaludega tsüklite tuvastamine on oluline, sest need võivad viidata potentsiaalsetele riskidele, vigadele või ebatavalistele stsenaariumidele, mis mõjutavad graafi struktuuril põhinevaid otsuseid ja tulemusi. 

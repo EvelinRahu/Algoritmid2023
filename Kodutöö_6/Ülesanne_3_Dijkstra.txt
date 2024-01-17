@@ -1,0 +1,17 @@
+Ülesanne 3: Dijkstra Algoritmi Teoreetiline Analüüs
+
+1. Kirjelda Dijkstra algoritmi ja selle kasutamist lühima tee leidmiseks graafides.
+
+Dijkstra algoritm on graafide lühima tee leidmise algoritm, mis töötab mitte-negatiivsete kaaludega suunatud või suunamata graafides. Algoritmi eesmärk on leida lähtetipust kõikide teiste tippudeni kõige lühimad teed.
+
+
+Dijkstra algoritmi protsess:
+
+1) Määra iga tipu kaugus lähtetipust lõpmatuks ja lähtetipu kaugus iseendale nulliks.
+2) Vali läbimata tippude hulgast tipp, mille kaugus lähtetipust on kõige väiksem --> värskenda tipuga ühendatud servi, värskendades kaugusi vastavalt lähtetipu kaudu leitud lühimale teele.
+3) Korda iteratsiooni seni, kuni kõik tipud on läbi käidud. Lõpptulemusena on iga tipu juures salvestatud kõige lühim tee ja selle pikkus lähtetipust.
+
+
+2. Arutle, millistes olukordades on Dijkstra algoritm eriti efektiivne ja millistes olukordades see võib ebaefektiivne olla.
+
+Dijkstra algoritm on eriti efektiivne mitte-negatiivsete kaalude ja hajusa võrgu korral, kuid ebaefektiivne  keerukamate struktuuride või negatiivsete kaaludega graafide korral. 

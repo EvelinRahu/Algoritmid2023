@@ -1,0 +1,18 @@
+Boonusülesanne: P vs NP Probleemi Ülevaade
+
+1. Kirjelda P vs NP probleemi olemust ja selle tähtsust arvutiteaduses.
+
+P vs NP probleem on arvutiteaduses üks olulisemaid avatud küsimusi, mis puudutab algoritmide efektiivsust ja lahendatavust. P-probleemidele on olemas efektiivne (polünoomne) algoritm, mis suudab lahendada need probleemid praktiliselt kiiresti. NP probleemidele aga pole teada, kas neile eksisteerib kiire ja efektiivne algoritm, kuid kui antud lahendus on teada, siis seda on võimalik kiiresti kontrollida.
+
+P vs NP probleemi olemus: kas iga probleem, mille lahendus on kiiresti kontrollitav, on ka kiiresti lahendatav.
+
+
+P vs NP küsimus on oluline probleem arvutiteaduses, kuna selle lahendus mõjutab oluliselt algoritmide efektiivsust, arvutusturvet ning aitab kujundada arusaama sellest, millised probleemid on lahendatavad polünoomsel ajal.
+
+
+2. Arutle, miks on P vs NP probleemi lahendamine oluline ja millised võiksid olla selle lahendamise tagajärjed.
+
+Kui tõestatakse, et P = NP, avaneksid uued võimalused efektiivsetele algoritmidele, võimaldades kiiremini lahendada paljusid keerulisi probleeme, alates andmetöötlusest kuni tehisintellekti rakendusteni. Samas kaasneks sellega ka turvalisuse väljakutsed, kuna mõned küberjulgeolekualgoritmid võiksid osutuda haavatavaks.
+
+Kui aga jääb kehtima, et P ≠ NP, säiliks keerukus mitmetes praktilistes olukordades. Mõned probleemid, nagu marsuutimise optimeerimine, andmebaaside päringud ja paljud teised, jääksid keeruliseks isegi tänapäevaste arvutite jaoks. See rõhutaks vajadust edasi arendada lähendusalgoritme ja ligikaudse lahendamise meetodeid.
+
